@@ -235,30 +235,30 @@ func TTN(mw *MyMainWindow) {
 			return
 		}
 		sh := "Sheet1"
-		xlrt.SetCellValue(sh, "A11", d2)     //реквизиты от фирмы.
-		xlrt.SetCellValue(sh, "A76", d3)     //реквизиты от фирмы.
-		xlrt.SetCellValue(sh, "A114", d3)    //реквизиты от фирмы.
-		xlrt.SetCellValue(sh, "BI8", x[0])   //дата BI8
-		xlrt.SetCellValue(sh, "BD43", x[0])  //дата BD43
-		xlrt.SetCellValue(sh, "A43", x[0])   //дата A43
-		xlrt.SetCellValue(sh, "AD118", x[0]) //дата AD118
-		xlrt.SetCellValue(sh, "CF118", x[0]) //дата CF118
+		xlrt.SetCellValue(sh, "A11", d2)
+		xlrt.SetCellValue(sh, "A76", d3)
+		xlrt.SetCellValue(sh, "A114", d3)
+		xlrt.SetCellValue(sh, "BI8", x[0])
+		xlrt.SetCellValue(sh, "BD43", x[0])
+		xlrt.SetCellValue(sh, "A43", x[0])
+		xlrt.SetCellValue(sh, "AD118", x[0])
+		xlrt.SetCellValue(sh, "CF118", x[0])
 
-		xlrt.SetCellValue(sh, "CM8", x[1])                                 // НОМЕР ТТН
-		xlrt.SetCellValue(sh, "A16", x[5])                                 // НАИМЕНОВАНИЕ ГРУЗА
-		xlrt.SetCellValue(sh, "A20", x[6]+" (м3)")                         // МАССА ГРУЗА
-		xlrt.SetCellValue(sh, "BD47", x[6]+" (м3)")                        // МАССА ГРУЗА
-		xlrt.SetCellValue(sh, "A47", x[6]+" (м3)")                         // МАССА ГРУЗА
-		xlrt.SetCellValue(sh, "AR106", "Оплата доставки за "+x[7]+" (м3)") // МАССА ГРУЗА
-		xlrt.SetCellValue(sh, "BD39", x[2])                                // объект аддр
+		xlrt.SetCellValue(sh, "CM8", x[1])
+		xlrt.SetCellValue(sh, "A16", x[5])
+		xlrt.SetCellValue(sh, "A20", x[6]+" (м3)")
+		xlrt.SetCellValue(sh, "BD47", x[6]+" (м3)")
+		xlrt.SetCellValue(sh, "A47", x[6]+" (м3)")
+		xlrt.SetCellValue(sh, "AR106", "Оплата доставки за "+x[7]+" (м3)")
+		xlrt.SetCellValue(sh, "BD39", x[2])
 		xlrt.SetCellValue(sh, "A39", x[8])
-		xlrt.SetCellValue(sh, "BD11", d1)   // объект аддр
-		xlrt.SetCellValue(sh, "BN82", x[3]) // гос номер
+		xlrt.SetCellValue(sh, "BD11", d1)
+		xlrt.SetCellValue(sh, "BN82", x[3])
 
-		xlrt.SetCellValue(sh, "A78", x[4])               // водитель
-		xlrt.SetCellValue(sh, "BC118", "Водитель "+x[4]) // водитель
-		xlrt.SetCellValue(sh, "BD51", x[4])              // водитель
-		xlrt.SetCellValue(sh, "A51", x[4])               // водитель
+		xlrt.SetCellValue(sh, "A78", x[4])
+		xlrt.SetCellValue(sh, "BC118", "Водитель "+x[4])
+		xlrt.SetCellValue(sh, "BD51", x[4])
+		xlrt.SetCellValue(sh, "A51", x[4])
 
 		if err != nil {
 			fmt.Println("TTN/" + strconv.Itoa(ccc) + "-" + x[1] + ".xlsx")
